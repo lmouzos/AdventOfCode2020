@@ -10,14 +10,14 @@ class Day5 {
         return existingSeats().maxOrNull()
     }
 
-    fun puzzle2(): List<Int> {
+    fun puzzle2(): Int {
         val exist = existingSeats()
         val excluded = allSeats().filterNot { exist.contains(it) }.sorted()
         return excluded
             .filterIndexed { index, l ->
                 l - 1 != excluded.getOrElse(index - 1) { excluded[index] } &&
                 l + 1 != excluded.getOrElse(index + 1) { excluded[index] }
-            }
+            }[0]
     }
 
     private fun allSeats(): List<Int> {
