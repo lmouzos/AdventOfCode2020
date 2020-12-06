@@ -15,7 +15,6 @@ class Day3 {
                 while (rightPos > s.length - 1) {
                     rightPos -= s.length
                 }
-                println("$rightPos $index")
                 s[rightPos] == '#'
             }
         }.count { it }
