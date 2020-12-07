@@ -4,6 +4,7 @@ import day3.Day3
 import day4.Day4
 import day5.Day5
 import day6.Day6
+import day7.Day7
 
 fun main() {
     println(Day1().puzzle1())
@@ -18,4 +19,6 @@ fun main() {
     println(Day5().puzzle2())
     println(Day6().puzzle1())
     println(Day6().puzzle2())
+    println(Day7().puzzle1())
+    println(Day7().puzzle2())
 }
